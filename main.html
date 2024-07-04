@@ -102,7 +102,7 @@
         async function populateTable() {
             const tableBody = document.getElementById('stockTable');
 
-            for (let i = 201; i < symbols.length; i++) {
+            for (let i = 0; i < symbols.length; i++) {
                 const stockData = await fetchStockData(symbols[i]);
                 const row = document.createElement('tr');
                 row.innerHTML = `
